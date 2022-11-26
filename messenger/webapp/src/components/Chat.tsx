@@ -1,6 +1,8 @@
+import React from "react";
 import styled from "@emotion/styled";
 import {
   Avatar,
+  Box,
   Button,
   Card,
   CardActions,
@@ -10,6 +12,12 @@ import {
 } from "@mui/material";
 
 const Chat = () => {
+  const ref = React.useRef<HTMLInputElement>();
+
+  React.useEffect(() => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  }, []);
+
   return (
     <Scroller>
       <ChatMessageList>
@@ -94,6 +102,7 @@ const Chat = () => {
             </label>
           </ChatMessageRight>
         </FloatRight>
+        <Box ref={ref}></Box>
       </ChatMessageList>
     </Scroller>
   );
@@ -104,7 +113,6 @@ export default Chat;
 const Scroller = styled("div")`
   overflow-y: scroll;
   height: calc(100vh - 64px - 100px);
-  z-index: 100;
 `;
 
 const ChatMessageList = styled("ul")`

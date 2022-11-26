@@ -1,0 +1,1 @@
+export const DRAWER__WIDTH = 240;

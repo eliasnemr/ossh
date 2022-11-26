@@ -23,6 +23,10 @@ const ChatWrapper = styled("div")`
   gap: 8px;
   background: #fff;
   padding: 8px 8px;
+
+  @media only screen and (max-width: 600px) {
+    left: 0;
+  }
 `;
 const ChatInput = () => {
   return (

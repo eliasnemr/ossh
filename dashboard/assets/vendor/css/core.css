@@ -14712,6 +14712,9 @@ body {
     height: auto;
   }
 }
+.buy-now{
+  display:none;
+}
 .buy-now .btn-buy-now {
   position: fixed;
   bottom: 3rem;

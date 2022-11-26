@@ -74,29 +74,49 @@ viewBox="0 0 425.9 199.11"><defs><style>.g{fill:#153d72;fill-rule:evenodd;}.h{is
               </a>
             </li>
 
+
             <li class="menu-header small text-uppercase">
-              <span class="menu-header-text">Healthcare</span>
+              <span class="menu-header-text"><i class="menu-icon tf-icons bx bx-user"></i>Patient Management</span>
             </li>
 
             <li class="menu-item">
-              <a href="cards-basic.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-collection"></i>
-                <div data-i18n="Basic">Overview</div>
-              </a>
-            </li>
-
-            <li id="menu-patients" class="menu-item">
               <a href="patients.php" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-user"></i>
                 <div data-i18n="Basic">Patients</div>
               </a>
             </li>
 
-            
             <li class="menu-item">
               <a href="cards-basic.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-plus-medical"></i>
-                <div data-i18n="Basic">Doctor Recommendation</div>
+                <div data-i18n="Basic">Prescriptions</div>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="cards-basic.html" class="menu-link">
+                <div data-i18n="Basic">Leaves</div>
+              </a>
+            </li>
+
+
+            <li class="menu-header small text-uppercase">
+              <span class="menu-header-text"><i class="menu-icon tf-icons bx bx-calendar"></i>Appointments</span>
+            </li>
+
+            <li class="menu-item">
+              <a href="cards-basic.html" class="menu-link">
+                <div data-i18n="Basic">All Appointments</div>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="cards-basic.html" class="menu-link">
+                <div data-i18n="Basic">Add New</div>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="cards-basic.html" class="menu-link">
+                <div data-i18n="Basic">settings</div>
               </a>
             </li>
 

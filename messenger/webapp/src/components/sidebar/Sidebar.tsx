@@ -11,13 +11,13 @@ const Sidebar = () => {
   return (
     <>
       <Header>
-        {media ? (
-          <img
-            className={styles["icon"]}
-            src="../assets/messenger.png"
-            alt="appIcon"
-          />
-        ) : null}
+        <img
+          className={styles["icon"]}
+          src="../assets/messenger.png"
+          alt="appIcon"
+        />
+        {/* {media ? (
+        ) : null} */}
       </Header>
       <ChatList>
         <ChatItem>

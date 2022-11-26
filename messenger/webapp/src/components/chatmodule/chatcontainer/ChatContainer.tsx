@@ -7,14 +7,18 @@ import ChatInput from "../chatinput/ChatInput";
 
 const ChatWrapper = styled("div")``;
 
-const ChatContainer = () => {
+interface IProps {
+  open: boolean;
+  closeDrawer: () => void;
+}
+const ChatContainer = ({ open, closeDrawer }: IProps) => {
   return (
     <ChatWrapper>
       <Box>
         <Drawer
           variant="temporary"
-          open={true}
-          onClose={() => console.log("closing..")}
+          open={open}
+          onClose={closeDrawer}
           ModalProps={{ keepMounted: true }}
           sx={drawerdisplay}
         >

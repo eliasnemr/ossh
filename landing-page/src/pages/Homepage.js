@@ -1,21 +1,17 @@
 import {
-  Toolbar, Box, Grid, TableRow,
+  Box, Grid, TableRow,
   TableCell, Button, TextField, FormControl,
   InputLabel, Select, MenuItem, Table, TableContainer, TableHead, TableBody
 } from '@mui/material'
 import Container from '@mui/material/Container'
 import { useNavigate } from 'react-router'
+import CustomAppBar from '../components/CustomAppBar'
 
 export default function Homepage() {
   const navigate = useNavigate()
   return (
     <Container>
-      <Box>
-        <Toolbar sx={{ backgroundColor: 'blue' }}>
-
-        </Toolbar>
-      </Box>
-
+      <CustomAppBar />
       <Box
         component='img'
         sx={{

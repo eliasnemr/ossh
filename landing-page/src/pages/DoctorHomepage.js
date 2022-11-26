@@ -1,17 +1,11 @@
-import {
-  Toolbar, Box, Paper, Grid, Typography
-} from '@mui/material'
+import {Box, Paper, Grid, Typography} from '@mui/material'
 import Container from '@mui/material/Container'
+import CustomAppBar from '../components/CustomAppBar'
 
 export default function Homepage() {
   return (
     <Container>
-      <Box>
-        <Toolbar sx={{ backgroundColor: 'blue' }}>
-
-        </Toolbar>
-      </Box>
-
+      <CustomAppBar />
       <Box
         component='img'
         sx={{

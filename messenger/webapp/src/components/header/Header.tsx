@@ -7,12 +7,14 @@ const Toolbar = styled("header")`
   background-color: #fff;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding: 0 16px;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
 
   > div h4 {
     margin: 0;
     padding: 0;
+    font-weight: 300;
   }
 `;
 

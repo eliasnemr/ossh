@@ -3,10 +3,9 @@ import { Box, Drawer } from "@mui/material";
 import { DRAWER__WIDTH } from "../../../constants";
 import Chat from "../../Chat";
 import Sidebar from "../../sidebar/Sidebar";
+import ChatInput from "../chatinput/ChatInput";
 
-const ChatWrapper = styled("div")`
-  height: 100%;
-`;
+const ChatWrapper = styled("div")``;
 
 const ChatContainer = () => {
   return (
@@ -27,6 +26,8 @@ const ChatContainer = () => {
       </Box>
 
       <Chat />
+
+      <ChatInput />
     </ChatWrapper>
   );
 };

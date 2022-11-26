@@ -8,11 +8,10 @@ import {
   CardMedia,
   Typography,
 } from "@mui/material";
-import Header from "./header/Header";
 
 const Chat = () => {
   return (
-    <>
+    <Scroller>
       <ChatMessageList>
         <FloatLeft>
           <ChatMessage>
@@ -57,10 +56,16 @@ const Chat = () => {
                 <p>Wants to refer you to a specialised physicist.</p>
               </label>
 
-              <Card variant="outlined">
+              <Card
+                variant="outlined"
+                sx={{
+                  border: "none",
+                  boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)",
+                }}
+              >
                 <CardMedia
                   component="img"
-                  height="140"
+                  height="240"
                   image="../assets/gastro.jpeg"
                 ></CardMedia>
                 <CardContent>
@@ -90,11 +95,17 @@ const Chat = () => {
           </ChatMessageRight>
         </FloatRight>
       </ChatMessageList>
-    </>
+    </Scroller>
   );
 };
 
 export default Chat;
+
+const Scroller = styled("div")`
+  overflow-y: scroll;
+  height: calc(100vh - 64px - 100px);
+  z-index: 100;
+`;
 
 const ChatMessageList = styled("ul")`
   margin: 0;

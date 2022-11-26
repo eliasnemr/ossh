@@ -14,7 +14,7 @@ const Sidebar = () => {
         {media ? (
           <img
             className={styles["icon"]}
-            src="../assets/OSSH_BLUE.png"
+            src="../assets/messenger.png"
             alt="appIcon"
           />
         ) : null}
@@ -65,6 +65,9 @@ const ChatItem = styled("li")`
     opacity: 0.8;
     cursor: pointer;
   }
+  margin-left: 16px;
+  margin-right: 16px;
+  border-radius: 12px;
   padding: 16px;
   background-color: #153d72;
   color: #fff;

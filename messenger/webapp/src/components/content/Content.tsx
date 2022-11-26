@@ -1,5 +1,6 @@
-import { Box } from "@mui/material";
+import { Box, Drawer } from "@mui/material";
 import { Routes, Route } from "react-router";
+import { DRAWER__WIDTH } from "../../constants";
 
 const Content = () => {
   return (
@@ -57,3 +58,8 @@ const drawerdisplaydesktop = {
   display: { xs: "none", sm: "block" },
   "& .MuiDrawer-paper": { width: DRAWER__WIDTH },
 };
+
+/**
+ * Content
+ */
+const SideMenu = () => {};

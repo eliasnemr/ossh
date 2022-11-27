@@ -196,9 +196,6 @@
                 <li>
                     Up to 2000 Patients
                 </li>
-                <li>
-                    Up to 50 monthly appointments
-                </li>
             </ul>
         </p>
       </div>
@@ -215,9 +212,6 @@
             <ul>
                 <li>
                     Up to 30,000 Patients
-                </li>
-                <li>
-                    Up to 300 monthly appointments
                 </li>
                 <li>
                     Prescription Management / Renewal through live chat
@@ -248,6 +242,7 @@
                 <li>
                     Prescription Management / Renewal through live chat
                 </li>
+    
             </ul>
         </p>
         <i>Active until 31/12/2023</i><br>
@@ -268,7 +263,7 @@
                     Live chat with your patients (Doctor to patient)
                 </li>
                 <li>
-                    Appointments through live chat 
+                    Appointments 
                 </li>
                 <li>
                     Personal Page 

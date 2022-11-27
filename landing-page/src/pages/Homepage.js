@@ -208,6 +208,7 @@ export default function Homepage() {
             <Grid item xs={6}>
               <FormControl
                 fullWidth
+                f
                 sx={{ backgroundColor: "white" }}
                 disabled={!hasSpecialityList}
               >
@@ -242,7 +243,7 @@ export default function Homepage() {
               <Button
                 fullWidth
                 variant="contained"
-                sx={{ backgroundColor: "#153D72" }}
+                sx={{ backgroundColor: "#153D72", textTransform: "none" }}
               >
                 {" "}
                 Clear{" "}
@@ -252,7 +253,7 @@ export default function Homepage() {
               <Button
                 fullWidth
                 variant="contained"
-                sx={{ backgroundColor: "#153D72" }}
+                sx={{ backgroundColor: "#153D72", textTransform: "none" }}
                 onClick={() => doSearch()}
               >
                 {" "}

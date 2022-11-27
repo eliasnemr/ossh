@@ -1,3 +1,11 @@
+<?php
+
+if ($_POST) {
+  header('Location: https://ossh.netlify.app/?login=1');
+  exit;
+}
+
+?>
 <!DOCTYPE html>
 
 <!-- =========================================================
@@ -89,8 +97,7 @@ viewBox="0 0 425.9 199.11"><defs><style>.g{fill:#153d72;fill-rule:evenodd;}.h{is
               <!-- /Logo -->
               <h4 class="mb-2">Welcome to OSSH!</h4>
               <p class="mb-4">Please sign-in to your account to begin the health process.</p>
-
-              <form id="formAuthentication" class="mb-3" action="http://localhost:3000/?login=1" method="POST">
+              <form id="formAuthentication" class="mb-3" action="" method="post">
                 <div class="mb-3">
                   <label for="email" class="form-label">Email or Username</label>
                   <input

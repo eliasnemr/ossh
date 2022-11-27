@@ -79,11 +79,12 @@ const BunchOfActions = styled("ul")`
   gap: 20px;
 `;
 const Action = styled("li")`
-  > button {
-    border: none;
-    height: 80px;
-    width: auto;
-    background-color: red;
+  > img {
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+  > p {
+    position: absolute;
   }
 `;
 
@@ -150,6 +151,7 @@ export default function Homepage() {
             sx={{
               width: "100%",
               height: "420px",
+              boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)",
             }}
             src="/assets/home2.jpg"
             alt="image"
@@ -160,20 +162,20 @@ export default function Homepage() {
         <Grid item xs={12} md={6}>
           <BunchOfActions>
             <Action>
-              <img src="https://via.placeholder.com/220" />
+              <img src="./assets/GPN.jpg" />
             </Action>
             <Action>
-              <img src="https://via.placeholder.com/220" />
+              <img src="./assets/NEON.jpg" />
             </Action>
           </BunchOfActions>
         </Grid>
         <Grid item xs={12} md={6}>
           <BunchOfActions>
             <Action>
-              <img src="https://via.placeholder.com/220" />
+              <img src="./assets/PHYN.jpg" />
             </Action>
             <Action>
-              <img src="https://via.placeholder.com/220" />
+              <img src="./assets/DEN.jpg" />
             </Action>
           </BunchOfActions>
         </Grid>

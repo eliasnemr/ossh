@@ -24,24 +24,34 @@ export default function CustomAppBar() {
   return (
     <Box>
       {/* opacity: 0.8 on :hover */}
-      <Toolbar sx={{ color: "black", cursor: "pointer" }}>
+      <Toolbar sx={{ color: "black", cursor: "pointer", mt: 2, mb: 2 }}>
         <Grid container alignItems="center">
           <Grid item xs={2} textAlign="right" onClick={() => navigate("/")}>
-            <Box className={styles["home__btn__wrapper"]}>
-              {" "}
-              <Typography variant="body1"> Home </Typography>{" "}
-            </Box>
-          </Grid>
-          <Grid item xs={2} textAlign="right">
-            <Box className={styles["home__btn__wrapper"]}>
+            <Stack
+              className={styles["home__btn__wrapper"]}
+              flexDirection="row"
+              gap="20px"
+            >
+              <Typography variant="body1"> Home </Typography>
               <Typography
                 component={Link}
                 color="textPrimary"
                 underline="none"
                 href="https://ossh-messenger.netlify.app/"
-              ></Typography>
-            </Box>
+              >
+                Chat
+              </Typography>
+              <Typography
+                component={Link}
+                color="textPrimary"
+                underline="none"
+                href="https://ossh.webdominar.com/html/index.php"
+              >
+                Dashboard
+              </Typography>
+            </Stack>
           </Grid>
+          <Grid item xs={2} textAlign="right"></Grid>
           <Grid item xs={4} textAlign="center" onClick={() => navigate("/")}>
             <Box
               component="img"
@@ -52,22 +62,9 @@ export default function CustomAppBar() {
             />
           </Grid>
           <Grid item xs={2} textAlign="left">
-            <Box className={styles["home__btn__wrapper"]}>
-              <Typography
-                component={Link}
-                color="textPrimary"
-                underline="none"
-                href="https://ossh-messenger.netlify.app/"
-              >
-                Chat
-              </Typography>
-            </Box>
+            <Box className={styles["home__btn__wrapper"]}></Box>
           </Grid>
-          <Grid
-            item
-            xs={2}
-            textAlign="left"
-          >
+          <Grid item xs={2} textAlign="left">
             {isLoggedIn ? (
               <Grid container>
                 <Grid item xs={12}>

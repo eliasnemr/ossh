@@ -273,7 +273,6 @@ export default function Homepage() {
                 <TableCell> Location </TableCell>
                 <TableCell> Speciality </TableCell>
               </TableRow>
-<<<<<<< Updated upstream
             </TableHead>
             <TableBody>
               {searchResult.map((option) => (
@@ -283,26 +282,10 @@ export default function Homepage() {
                   <TableCell> {option.speciality} </TableCell>
                 </TableRow>
               ))}
-              {/* <TableRow onClick={() => navigate('/doctor')}>
-              <TableCell> Kostis Kosti </TableCell>
-              <TableCell> Limassol </TableCell>
-              <TableCell> Heart Surgeon </TableCell>
-            </TableRow>
-            <TableRow onClick={() => navigate('/doctor')}>
-              <TableCell> Maria Kostantinou </TableCell>
-              <TableCell> Nicosia </TableCell>
-              <TableCell> Orthopaedic </TableCell>
-            </TableRow> */}
             </TableBody>
           </Table>
         </TableContainer>
       ) : null}
-=======
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
->>>>>>> Stashed changes
     </Box>
   );
 }

@@ -1,0 +1,21 @@
+
+
+
+.home__btn__wrapper p {
+  color: #000;
+  font-weight: 400;
+}
+.home__btn__wrapper a {
+  color: #000;
+  font-weight: 400;
+}
+.home__btn__wrapper a:hover {
+  color: #F57F90;
+  opacity: 1!important;
+  /* font-weight: 700; */
+}
+.home__btn__wrapper p:hover {
+  color: #F57F90;
+  opacity: 1!important;
+  /* font-weight: 700; */
+}

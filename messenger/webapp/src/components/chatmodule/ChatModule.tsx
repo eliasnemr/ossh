@@ -2,7 +2,7 @@ import Header from "../header/Header";
 import Content from "../content/Content";
 import styled from "@emotion/styled";
 import ChatContainer from "./chatcontainer/ChatContainer";
-import { Box, Button, Stack } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 import { DRAWER__WIDTH } from "../../constants";
 import React from "react";
 

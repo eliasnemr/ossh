@@ -33,8 +33,30 @@ const ChatInput = () => {
     <ChatWrapper>
       <Avatar sx={{ bgcolor: "#153D72" }}>P</Avatar>
       <ChatField placeholder="Type a message.." type="text" />
+
+      <ChatActions>
+        <button>History</button>
+        <button>Notice</button>
+        <button>Renewal</button>
+      </ChatActions>
     </ChatWrapper>
   );
 };
 
 export default ChatInput;
+
+const ChatActions = styled("div")`
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  > button {
+    border: none;
+    color: #fff;
+    background-color: #153d72;
+    font-weight: 600;
+    padding: 8px;
+    border-radius: 8px;
+    max-width: fit-content;
+    height: 32px;
+  }
+`;

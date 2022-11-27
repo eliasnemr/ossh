@@ -18,7 +18,7 @@ import {
 } from "@mui/material";
 import styled from "@emotion/styled";
 import { map, find, filter, split, has, isEmpty } from "lodash";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router";
 import CustomAppBar from "../components/CustomAppBar";
 
@@ -91,6 +91,8 @@ const Action = styled("li")`
 export default function Homepage() {
   const navigate = useNavigate();
 
+  const ref = React.useRef();
+
   const [nameValue, setNameValue] = useState("");
   const [surnameValue, setSurnameValue] = useState("");
   const [locationValue, setLocationValue] = useState("All");
@@ -101,6 +103,9 @@ export default function Homepage() {
     find(specialitiesList, { key: serviceValue })
   );
 
+  React.useEffect(() => {
+    ref.current?.scrollIntoView({ "scroll-behavior": "smooth" });
+  }, [searchResult]);
   const doSearch = () => {
     let filteredList = doctorsList;
 
@@ -142,7 +147,7 @@ export default function Homepage() {
   }, [location.search]);
 
   return (
-    <Box>
+    <Box sx={{ mb: 10 }}>
       <CustomAppBar />
       <Grid container align="center">
         <Grid item xs={12}>
@@ -308,7 +313,7 @@ export default function Homepage() {
         </Grid>
       </Grid>
       {searchResult.length > 0 ? (
-        <TableContainer>
+        <TableContainer sx={{ ml: 3, mr: 3 }}>
           <Table>
             <TableHead>
               <TableRow>
@@ -336,6 +341,7 @@ export default function Homepage() {
               <TableCell> Orthopaedic </TableCell>
             </TableRow> */}
             </TableBody>
+            <Box ref={ref}></Box>
           </Table>
         </TableContainer>
       ) : null}

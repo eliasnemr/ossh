@@ -171,7 +171,6 @@ export default function Homepage() {
                   label="Location"
                   onChange={(event) => {
                     setLocationValue(event.target.value);
-                    // setTobaccoBrandError('')
                   }}
                 >
                   {locationsList.map((option) => (
@@ -274,6 +273,7 @@ export default function Homepage() {
                 <TableCell> Location </TableCell>
                 <TableCell> Speciality </TableCell>
               </TableRow>
+<<<<<<< Updated upstream
             </TableHead>
             <TableBody>
               {searchResult.map((option) => (
@@ -297,6 +297,12 @@ export default function Homepage() {
           </Table>
         </TableContainer>
       ) : null}
+=======
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
+>>>>>>> Stashed changes
     </Box>
   );
 }

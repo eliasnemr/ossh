@@ -51,7 +51,7 @@ export default function CustomAppBar() {
               alt="logo"
             />
           </Grid>
-          <Grid item xs={2} textAlign="right">
+          <Grid item xs={2} textAlign="left">
             <Box className={styles["home__btn__wrapper"]}>
               <Typography
                 component={Link}
@@ -92,9 +92,17 @@ export default function CustomAppBar() {
               </Grid>
             ) : (
               <Box className={styles["home__btn__wrapper"]}>
-                <Typography variant="body1"> Signup / Login </Typography>
+                <Typography
+                  component={Link}
+                  color="textPrimary"
+                  underline="none"
+                  href="https://ossh.webdominar.com/html/login.php"
+                >
+                  Signup / Login
+                </Typography>
               </Box>
             )}
+            {/*  */}
           </Grid>
         </Grid>
       </Toolbar>

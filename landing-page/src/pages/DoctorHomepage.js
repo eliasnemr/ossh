@@ -7,6 +7,7 @@ export default function Homepage() {
       <CustomAppBar />
       <Grid container align="center">
         <Grid item xs={12}>
+<<<<<<< Updated upstream
           <Box
             component="img"
             sx={{
@@ -25,6 +26,23 @@ export default function Homepage() {
           </Grid> */}
         <Grid item xs={4}>
           <Grid container direction="column" alignItems="center">
+=======
+        <Box
+          component='img'
+          sx={{
+            width: 1,
+            height: '600px',
+          }}
+          src='/assets/doctor.jpeg'
+          alt='image'
+        />
+        </Grid>
+      </Grid>
+
+        <Grid container spacing={3} sx={{marginTop: '16px'}}>
+          <Grid item xs={4}>
+            <Grid container direction='column' alignItems='center'>
+>>>>>>> Stashed changes
             <Grid item>
               <Box
                 component="img"

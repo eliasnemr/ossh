@@ -162,16 +162,15 @@ export default function Homepage() {
         <Grid item xs={12}>
           <Grid container columnSpacing={4}>
             <Grid item xs={6}>
-              <Button fullWidth variant='contained' color='warning'> Clear </Button>
+              <Button fullWidth variant='contained' sx={{backgroundColor: '#153D72'}}> Clear </Button>
             </Grid>
             <Grid item xs={6}>
-              <Button fullWidth variant='contained' onClick={() => doSearch()}> Search </Button>
+              <Button fullWidth variant='contained' sx={{backgroundColor: '#153D72'}} onClick={() => doSearch()}> Search </Button>
             </Grid>
           </Grid>
         </Grid>
       </Grid>
-
-      <TableContainer sx={{paddingLeft: '32px', paddingRight: '32px'}}>
+      <TableContainer>
         <Table>
           <TableHead>
             <TableRow>

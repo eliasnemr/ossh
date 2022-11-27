@@ -1,8 +1,16 @@
-import { Toolbar, Box, Grid, Typography } from '@mui/material'
+import { Toolbar, Box, Grid, Typography, Avatar } from '@mui/material'
+import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router'
 
 export default function CustomAppBar() {
   const navigate = useNavigate()
+
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
+
+  useEffect(() => {
+    setIsLoggedIn(localStorage.getItem('login') === 'true')
+  }, [isLoggedIn])
+
   return (
     <Box>
       <Toolbar sx={{ backgroundColor: 'blue' }}>
@@ -23,7 +31,7 @@ export default function CustomAppBar() {
             <Typography> Help </Typography>
           </Grid>
           <Grid item xs={2} textAlign='left' onClick={() => navigate('/signup')}>
-            <Typography> Signup / Login </Typography>
+            {isLoggedIn ? <Avatar /> : <Typography> Signup / Login </Typography>}
           </Grid>
         </Grid>
       </Toolbar>

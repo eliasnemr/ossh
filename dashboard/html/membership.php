@@ -184,98 +184,11 @@
 
             <div class="container-xxl flex-grow-1 container-p-y">
             <div class="row mb-5">
-  <div class="col-md-6 col-lg-4 mb-3">
-    <div class="card">
-      <div class="card-header">
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Healthcare Free</h5>
-        <p class="card-text">
-        Good enough to get started with the system  <br>→ <a href="#">Read Full Specs</a><hr>
-            <ul>
-                <li>
-                    Up to 2000 Patients
-                </li>
-            </ul>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-6 col-lg-4 mb-3">
-    <div class="card">
-        <div class="card-header">
-        </div>
-        <div class="card-body">
-        <h5 class="card-title">Healthcare Premium</h5>
-        <p class="card-text">
-        Excellent for small to medium organizations  <br>→ <a href="#">Read Full Specs</a><hr>
-            <ul>
-                <li>
-                    Up to 20,000 Patients
-                </li>
-                <li>
-                    Prescription Management / Renewal through live chat
-                </li>
-            </ul>
-        </p>
-      </div>
-        </div>
-    </div>
-    <div class="col-md-6 col-lg-4 mb-3">
-    <div class="card border border-success">
-      <div class="card-header">
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Healthcare Professional</h5>
-        <p class="card-text">
-        Suitable for any professional healthcare organization  <br>→ <a href="#">Read Full Specs</a><hr>
-            <ul>
-                <li>
-                    Up to 50,000 Patients
-                </li>
-                <li>
-                    Live chat with your patients
-                </li>
-                <li>
-                    Live chat \with doctors
-                </li>
-                <li>
-                    Prescription Management / Renewal through live chat
-                </li>
-    
-            </ul>
-        </p>
-        <i>Active until 31/12/2023</i><br>
-            <a href="javascript:void(0)" class="btn btn-primary">Extend Membership</a><br><br>
-            <a href="boost.php" class="btn btn-danger"><i class="tf-icons bx bx-rocket"></i> Boost Membership</a></div> 
-        </div>
-    </div>
-  </div>
+                <div class="row">
+                    <img src="https://cdn.discordapp.com/attachments/1033286527029092365/1046397908494340177/image.png">
+                </div>
+             </div>
 
-  <div class="col-md-6 col-lg-4 mb-3">
-    <div class="card">
-      <div class="card-header">
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Standard Addons</h5>
-        <p class="card-text">
-            Addons Included in Every plan <hr>
-            <ul>
-                <li>
-                    Live chat with your patients (Doctor to patient)
-                </li>
-                <li>
-                    Appointments 
-                </li>
-                <li>
-                    Personal Page 
-                </li>
-                <li>Leave Notice</li>
-            </ul>
-        </p>
-
-    </div>
-  </div>
             </div>
             <!-- / Content -->
 

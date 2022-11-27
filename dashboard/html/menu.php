@@ -163,9 +163,14 @@ viewBox="0 0 425.9 199.11"><defs><style>.g{fill:#153d72;fill-rule:evenodd;}.h{is
                 <div data-i18n="Basic">View Memberships</div>
               </a>
             </li>
+            <li class="menu-item">
+              <a href="boost.php" class="menu-link">
+                <div data-i18n="Basic">Boosts</div>
+              </a>
+            </li>
 
             <li class="menu-item">
-              <a href="#" class="menu-link">
+              <a href="addons.php" class="menu-link">
                 <div data-i18n="Basic">Addons</div>
               </a>
             </li>

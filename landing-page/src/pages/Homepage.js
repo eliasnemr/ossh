@@ -16,6 +16,7 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
+import styled from "@emotion/styled";
 import { map, find, filter, split, has, isEmpty } from "lodash";
 import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router";
@@ -68,6 +69,23 @@ const doctorsList = [
     speciality: "Cardiologist",
   },
 ];
+
+const BunchOfActions = styled("ul")`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  gap: 20px;
+`;
+const Action = styled("li")`
+  > button {
+    border: none;
+    height: 80px;
+    width: auto;
+    background-color: red;
+  }
+`;
 
 export default function Homepage() {
   const navigate = useNavigate();
@@ -138,10 +156,32 @@ export default function Homepage() {
           />
         </Grid>
       </Grid>
+      <Grid container align="center">
+        <Grid item xs={12} md={6}>
+          <BunchOfActions>
+            <Action>
+              <img src="https://via.placeholder.com/220" />
+            </Action>
+            <Action>
+              <img src="https://via.placeholder.com/220" />
+            </Action>
+          </BunchOfActions>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <BunchOfActions>
+            <Action>
+              <img src="https://via.placeholder.com/220" />
+            </Action>
+            <Action>
+              <img src="https://via.placeholder.com/220" />
+            </Action>
+          </BunchOfActions>
+        </Grid>
+      </Grid>
       <Grid
         container
         direction="column"
-        sx={{ padding: "32px" }}
+        sx={{ padding: "0 32px" }}
         rowSpacing={2}
       >
         <Grid item xs={12}>
@@ -171,6 +211,7 @@ export default function Homepage() {
                   label="Location"
                   onChange={(event) => {
                     setLocationValue(event.target.value);
+                    // setTobaccoBrandError('')
                   }}
                 >
                   {locationsList.map((option) => (
@@ -282,6 +323,16 @@ export default function Homepage() {
                   <TableCell> {option.speciality} </TableCell>
                 </TableRow>
               ))}
+              {/* <TableRow onClick={() => navigate('/doctor')}>
+              <TableCell> Kostis Kosti </TableCell>
+              <TableCell> Limassol </TableCell>
+              <TableCell> Heart Surgeon </TableCell>
+            </TableRow>
+            <TableRow onClick={() => navigate('/doctor')}>
+              <TableCell> Maria Kostantinou </TableCell>
+              <TableCell> Nicosia </TableCell>
+              <TableCell> Orthopaedic </TableCell>
+            </TableRow> */}
             </TableBody>
           </Table>
         </TableContainer>

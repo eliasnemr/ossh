@@ -67,9 +67,6 @@ export default function CustomAppBar() {
             item
             xs={2}
             textAlign="left"
-            onClick={() => {
-              if (!isLoggedIn) navigate("/signup");
-            }}
           >
             {isLoggedIn ? (
               <Grid container>

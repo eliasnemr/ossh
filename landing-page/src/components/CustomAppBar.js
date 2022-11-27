@@ -13,7 +13,7 @@ export default function CustomAppBar() {
 
   return (
     <Box>
-      <Toolbar sx={{ backgroundColor: 'blue' }}>
+      <Toolbar sx={{ color: 'black' }}>
         <Grid container alignItems='center'>
           <Grid item xs={2} textAlign='right' onClick={() => navigate('/')}>
             <Typography> Home </Typography>
@@ -22,16 +22,25 @@ export default function CustomAppBar() {
             <Typography> Chat </Typography>
           </Grid>
           <Grid item xs={4} textAlign='center' onClick={() => navigate('/')}>
-            <Typography> OSSH </Typography>
+            <Box component='img' width='120px' height='auto' src='/assets/logo.png' alt='logo' />
           </Grid>
-          {/* <Grid item xs={2} textAlign='center' onClick={() => navigate('/appointment')}>
-            <Typography> Appointment </Typography>
-          </Grid> */}
-          <Grid item xs={2} textAlign='left' onClick={() => navigate('/help')}>
-            <Typography> Help </Typography>
+          <Grid item xs={2} textAlign='left'>
+            <Typography>  </Typography>
           </Grid>
-          <Grid item xs={2} textAlign='left' onClick={() => navigate('/signup')}>
-            {isLoggedIn ? <Avatar /> : <Typography> Signup / Login </Typography>}
+          <Grid item xs={2} textAlign='left' onClick={() => {
+            if (!isLoggedIn) navigate('/signup')
+          }}>
+            {isLoggedIn
+              ? <Grid container>
+                  <Grid item xs={6}>
+                    <Typography> Alexandros Yiangou </Typography>
+                  </Grid>
+                  <Grid item xs={6}>
+                    <Avatar />
+                  </Grid>
+                </Grid>
+              : <Typography> Signup / Login </Typography>
+            }
           </Grid>
         </Grid>
       </Toolbar>

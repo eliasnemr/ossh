@@ -3,8 +3,7 @@ import {
   TableCell, Button, TextField, FormControl,
   InputLabel, Select, MenuItem, Table, TableContainer, TableHead, TableBody
 } from '@mui/material'
-import {map, find, filter, split} from 'lodash'
-import Container from '@mui/material/Container'
+import {map, find, filter, split, has, isEmpty} from 'lodash'
 import { useState, useEffect } from 'react'
 import { useNavigate, useLocation } from 'react-router'
 import CustomAppBar from '../components/CustomAppBar'
@@ -49,31 +48,41 @@ export default function Homepage() {
   const location = useLocation()
 
   useEffect(() => {
-    if (localStorage.getItem('login') === 'true') return
     const params = {}
     const query = location.search.substring(1)
-    const pairs = split(query, '&')
+    const pairs = query ? split(query, '&') : ''
 
     for (let i = 0; i < pairs.length; i++) {
       const pair = split(pairs[i], '=')
       params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '');
     }
 
-    localStorage.setItem('login', params.login === '1')
+    if ((localStorage.getItem('login') === 'true') && (has(params, 'login') && params.login === '1')) {
+      return
+    } else if(isEmpty(params)) {
+      return
+    } else {
+      localStorage.setItem('login', params.login === '1')
+    }
   }, [location.search])
   
   return (
-    <Container>
+    <Box>
       <CustomAppBar />
-      <Box
-        component='img'
-        sx={{
-          width: 1,
-          height: '500px',
-          backgroundColor: 'red'
-        }}
-      />
-      <Grid container direction='column' sx={{ backgroundColor: 'rgba(29,197,214,.1)' }} rowSpacing={2}>
+      <Grid container align='center'>
+        <Grid item xs={12}>
+        <Box
+          component='img'
+          sx={{
+            width: 0.9,
+            height: '500px',
+          }}
+          src='/assets/home2.jpg'
+          alt='image'
+        />
+        </Grid>
+      </Grid>
+      <Grid container direction='column' sx={{ padding: '32px' }} rowSpacing={2}>
         <Grid item xs={12}>
           <Grid container columnSpacing={4}>
             <Grid item xs={4}>
@@ -162,7 +171,7 @@ export default function Homepage() {
         </Grid>
       </Grid>
 
-      <TableContainer>
+      <TableContainer sx={{paddingLeft: '32px', paddingRight: '32px'}}>
         <Table>
           <TableHead>
             <TableRow>
@@ -192,6 +201,6 @@ export default function Homepage() {
           </TableBody>
         </Table>
       </TableContainer>
-    </Container>
+    </Box>
   )
 }

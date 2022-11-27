@@ -1,4 +1,12 @@
-import { Toolbar, Box, Grid, Typography, Avatar, Link } from "@mui/material";
+import {
+  Toolbar,
+  Box,
+  Grid,
+  Typography,
+  Avatar,
+  Link,
+  Stack,
+} from "@mui/material";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 
@@ -31,9 +39,7 @@ export default function CustomAppBar() {
                 color="textPrimary"
                 underline="none"
                 href="https://ossh-messenger.netlify.app/"
-              >
-                Chat
-              </Typography>
+              ></Typography>
             </Box>
           </Grid>
           <Grid item xs={4} textAlign="center" onClick={() => navigate("/")}>
@@ -45,8 +51,17 @@ export default function CustomAppBar() {
               alt="logo"
             />
           </Grid>
-          <Grid item xs={2} textAlign="left">
-            <Typography> </Typography>
+          <Grid item xs={2} textAlign="right">
+            <Box className={styles["home__btn__wrapper"]}>
+              <Typography
+                component={Link}
+                color="textPrimary"
+                underline="none"
+                href="https://ossh-messenger.netlify.app/"
+              >
+                Chat
+              </Typography>
+            </Box>
           </Grid>
           <Grid
             item
@@ -58,11 +73,21 @@ export default function CustomAppBar() {
           >
             {isLoggedIn ? (
               <Grid container>
-                <Grid item xs={6}>
-                  <Typography> Alexandros Yiangou </Typography>
-                </Grid>
-                <Grid item xs={6}>
-                  <Avatar />
+                <Grid item xs={12}>
+                  <Stack flexDirection="row" alignItems="center" gap="8px">
+                    <Typography
+                      variant="caption"
+                      sx={{
+                        color: "#16181c",
+                        fontWeight: "700",
+                        textAlign: "right",
+                      }}
+                    >
+                      {" "}
+                      Alexandros Yiangou{" "}
+                    </Typography>
+                    <Avatar sx={{ bgcolor: "#F57F90" }}>A</Avatar>
+                  </Stack>
                 </Grid>
               </Grid>
             ) : (

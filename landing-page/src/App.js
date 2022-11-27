@@ -6,8 +6,6 @@ export default function App() {
   return (
     <Routes>
       <Route path='/' element={<Homepage />}> </Route>
-      <Route path='/chat' element={<p> Chat Page -pending- </p>}> </Route>
-      <Route path='/help' element={<p> Help Page -pending- </p>}> </Route>
       <Route path='/signup' element={<p> Signup Page -pending- </p>}> </Route>
       <Route path='/login' element={<p> Login Page -pending- </p>}> </Route>
       <Route path='/doctor' element={<DoctorHomepage />}> </Route>

@@ -183,99 +183,71 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-            <div class="row mb-5">
-  <div class="col-md-6 col-lg-4 mb-3">
-    <div class="card">
-      <div class="card-header">
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Healthcare Free</h5>
-        <p class="card-text">
-        Good enough to get started with the system  <br>→ <a href="#">Read Full Specs</a><hr>
-            <ul>
-                <li>
-                    Up to 2000 Patients
-                </li>
-            </ul>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-6 col-lg-4 mb-3">
-    <div class="card">
-        <div class="card-header">
-        </div>
-        <div class="card-body">
-        <h5 class="card-title">Healthcare Premium</h5>
-        <p class="card-text">
-        Excellent for small to medium organizations  <br>→ <a href="#">Read Full Specs</a><hr>
-            <ul>
-                <li>
-                    Up to 20,000 Patients
-                </li>
-                <li>
-                    Prescription Management / Renewal through live chat
-                </li>
-            </ul>
-        </p>
-      </div>
-        </div>
-    </div>
-    <div class="col-md-6 col-lg-4 mb-3">
-    <div class="card border border-success">
-      <div class="card-header">
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Healthcare Professional</h5>
-        <p class="card-text">
-        Suitable for any professional healthcare organization  <br>→ <a href="#">Read Full Specs</a><hr>
-            <ul>
-                <li>
-                    Up to 50,000 Patients
-                </li>
-                <li>
-                    Live chat with your patients
-                </li>
-                <li>
-                    Live chat \with doctors
-                </li>
-                <li>
-                    Prescription Management / Renewal through live chat
-                </li>
-    
-            </ul>
-        </p>
-        <i>Active until 31/12/2023</i><br>
-            <a href="javascript:void(0)" class="btn btn-primary">Extend Membership</a><br><br>
-            <a href="boost.php" class="btn btn-danger"><i class="tf-icons bx bx-rocket"></i> Boost Membership</a></div> 
-        </div>
-    </div>
-  </div>
+              <div class="row">
+                <div class="col-lg-12 order-0">
+                    <div class="card">
+                        <h5 class="card-header">Striped rows</h5>
+                        <div class="table-responsive text-nowrap">
+                          <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Actions</th>
+                              </tr>
+                            </thead>
+                            <tbody class="table-border-bottom-0">
+                              <tr>
+                                <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>956424</strong></td>
+                                <td>Albert Cook</td>
+                                <td><span class="badge bg-label-primary me-1">Active</span></td>
+                                <td>
+                                  <div class="dropdown">
+                                    <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
+                                    <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i> Edit</a>
+                                      <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> Delete</a>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><i class="fab fa-react fa-lg text-info me-3"></i> <strong>453212</strong></td>
+                                <td>Barry Hunter</td>
+                                <td><span class="badge bg-label-success me-1">Completed</span></td>
+                                <td>
+                                  <div class="dropdown">
+                                    <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
+                                    <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i> Edit</a>
+                                      <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> Delete</a>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><i class="fab fa-vuejs fa-lg text-success me-3"></i> <strong>765488</strong></td>
+                                <td>Trevor Baker</td>
 
-  <div class="col-md-6 col-lg-4 mb-3">
-    <div class="card">
-      <div class="card-header">
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Standard Addons</h5>
-        <p class="card-text">
-            Addons Included in Every plan <hr>
-            <ul>
-                <li>
-                    Live chat with your patients (Doctor to patient)
-                </li>
-                <li>
-                    Appointments 
-                </li>
-                <li>
-                    Personal Page 
-                </li>
-                <li>Leave Notice</li>
-            </ul>
-        </p>
+                                <td><span class="badge bg-label-info me-1">Scheduled</span></td>
+                                <td>
+                                  <div class="dropdown">
+                                    <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
+                                    <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i> Edit</a>
+                                      <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> Delete</a>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                </div>
 
-    </div>
-  </div>
+              </div>
+
             </div>
             <!-- / Content -->
 
@@ -322,8 +294,5 @@
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
-    <script>
-        $("#menu-membership").addClass("active")
-    </script>
   </body>
 </html>

@@ -154,12 +154,12 @@ viewBox="0 0 425.9 199.11"><defs><style>.g{fill:#153d72;fill-rule:evenodd;}.h{is
               </a>
             </li>
 
-            <li class="menu-header small text-uppercase">
+            <li id="menu-membership" class="menu-header small text-uppercase">
               <span class="menu-header-text">Membership</span>
             </li>
 
             <li class="menu-item">
-              <a href="#" class="menu-link">
+              <a href="membership.php" class="menu-link">
                 <div data-i18n="Basic">View Memberships</div>
               </a>
             </li>

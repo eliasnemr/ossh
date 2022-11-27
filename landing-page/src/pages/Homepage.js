@@ -13,6 +13,8 @@ import {
   TableContainer,
   TableHead,
   TableBody,
+  Stack,
+  Typography,
 } from "@mui/material";
 import { map, find, filter, split, has, isEmpty } from "lodash";
 import { useState, useEffect } from "react";
@@ -129,7 +131,7 @@ export default function Homepage() {
             component="img"
             sx={{
               width: "100%",
-              height: "500px",
+              height: "420px",
             }}
             src="/assets/home2.jpg"
             alt="image"
@@ -263,24 +265,25 @@ export default function Homepage() {
           </Grid>
         </Grid>
       </Grid>
-      <TableContainer>
-        <Table>
-          <TableHead>
-            <TableRow>
-              <TableCell> Full Name </TableCell>
-              <TableCell> Location </TableCell>
-              <TableCell> Speciality </TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {searchResult.map((option) => (
-              <TableRow onClick={() => navigate("/doctor")}>
-                <TableCell> {option.name + " " + option.surname} </TableCell>
-                <TableCell> {option.location} </TableCell>
-                <TableCell> {option.speciality} </TableCell>
+      {searchResult.length > 0 ? (
+        <TableContainer>
+          <Table>
+            <TableHead>
+              <TableRow>
+                <TableCell> Full Name </TableCell>
+                <TableCell> Location </TableCell>
+                <TableCell> Speciality </TableCell>
               </TableRow>
-            ))}
-            {/* <TableRow onClick={() => navigate('/doctor')}>
+            </TableHead>
+            <TableBody>
+              {searchResult.map((option) => (
+                <TableRow onClick={() => navigate("/doctor")}>
+                  <TableCell> {option.name + " " + option.surname} </TableCell>
+                  <TableCell> {option.location} </TableCell>
+                  <TableCell> {option.speciality} </TableCell>
+                </TableRow>
+              ))}
+              {/* <TableRow onClick={() => navigate('/doctor')}>
               <TableCell> Kostis Kosti </TableCell>
               <TableCell> Limassol </TableCell>
               <TableCell> Heart Surgeon </TableCell>
@@ -290,9 +293,10 @@ export default function Homepage() {
               <TableCell> Nicosia </TableCell>
               <TableCell> Orthopaedic </TableCell>
             </TableRow> */}
-          </TableBody>
-        </Table>
-      </TableContainer>
+            </TableBody>
+          </Table>
+        </TableContainer>
+      ) : null}
     </Box>
   );
 }

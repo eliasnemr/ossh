@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "@emotion/styled";
-import DriveFolderUploadIcon from "@mui/icons-material/DriveFolderUpload";
 import { Avatar } from "@mui/material";
 
 const ChatField = styled("input")`

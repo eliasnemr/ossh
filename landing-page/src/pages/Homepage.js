@@ -104,7 +104,7 @@ export default function Homepage() {
   );
 
   React.useEffect(() => {
-    ref.current?.scrollIntoView({ "scroll-behavior": "smooth" });
+    ref.current?.scrollIntoView({ behavior: "smooth" });
   }, [searchResult]);
   const doSearch = () => {
     let filteredList = doctorsList;
@@ -324,7 +324,10 @@ export default function Homepage() {
             </TableHead>
             <TableBody>
               {searchResult.map((option) => (
-                <TableRow onClick={() => navigate("/doctor")}>
+                <TableRow
+                  sx={{ ":hover": "rgba(0, 0, 0, 0.1" }}
+                  onClick={() => navigate("/doctor")}
+                >
                   <TableCell> {option.name + " " + option.surname} </TableCell>
                   <TableCell> {option.location} </TableCell>
                   <TableCell> {option.speciality} </TableCell>

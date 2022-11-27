@@ -3,7 +3,7 @@ import CustomAppBar from "../components/CustomAppBar";
 
 export default function Homepage() {
   return (
-    <Box>
+    <Box sx={{ mb: 3 }}>
       <CustomAppBar />
       <Grid container align="center">
         <Grid item xs={12}>
@@ -11,10 +11,10 @@ export default function Homepage() {
             component="img"
             sx={{
               width: 1,
-              height: "600px",
+              height: "420px",
               boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)",
             }}
-            src="/assets/doctor.jpeg"
+            src="./assets/KOTSIOS.jpg"
             alt="image"
           />
         </Grid>
